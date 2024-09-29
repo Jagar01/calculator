@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Create a calculator very similar to Apple Calculator -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title> 
+  <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+  <script src="main.js"></script>
+  <div class="calculator">
+    <div class="display" id="display"></div>
+    <div>
+      <button id="btn2" class="btn2 valueC" onclick="resetDisplay()">C</button>
+      <button id="btn2" class="btn2 valuex" onclick="operator('*')">x</button>
+      <button id="btn2" class="btn2 valuex" onclick="operator('/')">/</button>
+      <button id="btn2" class="btn2 value-" onclick="operator('-')">-</button>
+    </div>
+    <div>
+      <button id="btn1" class="btn1 value7" onclick="numberInput(7)">7</button>    
+      <button id="btn1" class="btn1 value8" onclick="numberInput(8)">8</button>
+      <button id="btn1" class="btn1 value9" onclick="numberInput(9)">9</button>
+      <button id="btn2" class="btn2 value+" onclick="operator('+')">+</button>
+
+    </div>
+    <div>
+      <button id="btn1" class="btn1 value4" onclick="numberInput(4)">4</button>
+      <button id="btn1" class="btn1 value5" onclick="numberInput(5)">5</button>
+      <button id="btn1" class="btn1 value6" onclick="numberInput(6)">6</button>
+      <button id="btn2" class="btn2 value=" onclick="calculateFinal()">=</button>
+    </div>
+    <div>
+      <button id="btn1" class="btn1 value1" onclick="numberInput(1)">1</button>
+      <button id="btn1" class="btn1 value2" onclick="numberInput(2)">2</button>
+      <button id="btn1" class="btn1 value3" onclick="numberInput(3)">3</button>
+      <button id="btn1" class="btn1 value0" onclick="numberInput(0)">0</button>
+    </div>
+  </div>
+</body>
+</html>
